@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    padding: 40px 20px;
+}
+
+/* Main container */
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header section */
+main > div:first-child {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main > div:first-child h2 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+main > div:first-child p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Registration form */
+.reg-form {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 14px 20px;
+    align-items: center;
+}
+
+.reg-form label {
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+.reg-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.reg-form input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #0369a1;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Put buttons in the second column */
+.reg-form .btn {
+    grid-column: 2;
+}
+
+/* Results */
+.results {
+    margin-top: 25px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.results h2 {
+    font-size: 20px;
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+/* Output boxes */
+.results pre {
+    min-height: 70px;
+    padding: 15px;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    color: #a7f3d0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+}
+
+/* Decrypted output spacing */
+#decrypted {
+    margin-top: 25px;
+    color: #bae6fd;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    main > div:first-child h2 {
+        font-size: 25px;
+    }
+
+    .reg-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .reg-form .btn {
+        grid-column: 1;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .results {
+        padding: 20px;
+    }
+}
+

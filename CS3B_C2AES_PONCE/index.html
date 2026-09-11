@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of AES</title>
+    <!-- Imports the CryptoJS library. CryptoJS is used in the JavaScript file to perform AES encryption and decryption. -->
+    <script src="https://cdnjs.cloudflare.com
+    /ajax/libs/crypto-js.min.js">
+    </script>
+    <!-- Connects the HTML file to the external CSS file. The CSS file controls the design and appearance of the webpage. -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Main container that holds all the content of the AES signup portal. -->
+    <main>
+        <!-- ========================= HEADER SECTION ========================= -->
+        <div>
+            <h2> Signup to Crocorrupt Portal</h2>
+            <p>Where your money will never be secured'
+                but your details will be kept secret,
+            </p>
+        </div>
+
+        <!-- ========================= SIGNUP FORM ========================= -->
+        <div class="reg-form">
+            <label for="name">Full Name</label>
+            <input id="name" type="text"/>
+
+            <label for="name">User Name</label>
+            <input id="name" type="text"/>
+
+            <label for="pcode">Passcode</label>
+            <input id="pcode" type="password"/>
+
+            <label for="pera">Pera Mo</label>
+            <input id="pera" type="Number"/>
+            <!-- Button that calls encryptSignup() when clicked. The function is defined in the JavaScript file. -->
+            <button class="btn" onclick="encryptSignup()">
+                Encrypt Signup
+            </button>
+            <!-- Button that calls decryptSignup() when clicked. It decrypts the encrypted signup data. -->
+            <button class="btn" onclick="decryptSignup()">
+                Decrypt Signup
+            </button>
+            </div>
+            <!-- ========================= ENCRYPTED OUTPUT ========================= -->
+            <div class="results">
+                <h2>Encrypted Output</h2>
+            <pre id="encrypted"></pre>
+
+            <div class="results">
+                <h2>Decrypted Output</h2>
+            <pre id="decrypted"></pre>
+        </div>
+    </div>    
+</body>
+</html>
